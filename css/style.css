@@ -6,7 +6,6 @@ Main stylesheet for portfolio website
 */
 
 /* Fonts */
-
 .font1{
   font-family: 'Droid Sans', sans-serif;
 }
@@ -15,42 +14,39 @@ Main stylesheet for portfolio website
   font-family: 'Roboto condensed', sans-serif;
 }
 
-.font3{
+p, .font3{
   font-family: 'PT Sans', sans-serif;
 }
 
-.heading1{
+h3{
   font-family: 'Nunito', sans-serif;
 }
 
-.heading2{
+h2{
   font-family: 'Cairo', sans-serif;
 }
 
-.heading3{
+h1{
   font-family: 'Lobster', serif;
+  text-align: center;
 }
-
 /* End fonts */
-
 /* Color Scheme */
-
-.primary0 { color: rgba( 26, 96,149,1); }	/* Main Primary color */
-.primary1 { color: rgba( 12, 52, 83,1); }
+.p0 { color: rgba( 26, 96,149,1); }	/* Main Primary color: BLUE */
+.p1 { color: rgba( 12, 52, 83,1); }
 .p2 { color: rgba( 23, 75,114,1); }
 .p3 { color: rgba( 39,109,162,1); }
 .p4 { color: rgba( 56,128,184,1); }
 
-.s10 { color: rgba(231,166, 28,1); }	/* Main Secondary color (1) */
+.s10 { color: rgba(231,166, 28,1); }	/* Main Secondary color (1): YELLOW */
 .s11 { color: rgba(130, 91, 11,1); }
 .s12 { color: rgba(177,129, 27,1); }
 .s13 { color: rgba(252,186, 47,1); }
 .s14 { color: rgba(255,194, 65,1); }
 
-.s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2) */
+.s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 .s21 { color: rgba(130, 63, 11,1); }
 .s22 { color: rgba(177, 92, 27,1); }
 .s23 { color: rgba(252,136, 47,1); }
 .s24 { color: rgba(255,147, 65,1); }
-
 /* End color scheme */
