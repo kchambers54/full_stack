@@ -33,13 +33,14 @@ h2{
 h1{
   font-family: 'Lobster', serif;
   text-align: center;
+  font-size: 36pt;
 }
 /* End fonts */
 /*Links*/
-a:hover{ color: rgba(252,136, 47,1); }
-p > a:visited{ color: rgba(177, 92, 27,1); }
-p > a{ color: rgba(255,147, 65,1); }
-h3 > a{color: rgba(231,166, 28,1); text-decoration: none;}
+a:hover{ color: rgba(252,136, 47,1); } /*.s23*/
+p > a:visited{ color: rgba(177, 92, 27,1); }/*.s22*/
+p > a{ color: rgba(255,147, 65,1); }/*.s24*/
+h3 > a{color: rgba(231,166, 28,1); text-decoration: none;}/*.s10*/
 /*End Links*/
 /* Color Scheme */
 .p0 { color: rgba( 26, 96,149,1); }	/* Main Primary color: BLUE */
@@ -64,4 +65,20 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 
 body{
   background-color: #2F2F35;
+}
+
+/*  */
+/* ID's */
+
+#info{
+  display: flex;
+  width: inherit;
+}
+#right{
+  text-align: right;
+  flex-grow: 1;
+}
+#left{
+  text-align: left;
+  flex-grow: 1;
 }
