@@ -8,7 +8,7 @@ Main stylesheet for portfolio website
 /* Fonts */
 p, .font1{
   font-family: 'Droid Sans', sans-serif;
-  font-size: 11pt;
+  font-size: 12pt;
   color: #DFDFDF;
 }
 
@@ -22,10 +22,12 @@ p, .font1{
 
 h3{
   font-family: 'Nunito', sans-serif;
+  font-size: 16pt;
 }
 
 h2{
   font-family: 'Cairo', sans-serif;
+  font-size: 20pt;
 }
 
 h1{
@@ -33,12 +35,18 @@ h1{
   text-align: center;
 }
 /* End fonts */
+/*Links*/
+a:hover{ color: rgba(252,136, 47,1); }
+p > a:visited{ color: rgba(177, 92, 27,1); }
+p > a{ color: rgba(255,147, 65,1); }
+h3 > a{color: rgba(231,166, 28,1); text-decoration: none;}
+/*End Links*/
 /* Color Scheme */
 .p0 { color: rgba( 26, 96,149,1); }	/* Main Primary color: BLUE */
 .p1 { color: rgba( 12, 52, 83,1); }
 .p2 { color: rgba( 23, 75,114,1); }
-.p3 { color: rgba( 39,109,162,1); }
-h2, .p4 { color: rgba( 56,128,184,1); }
+h2, .p3 { color: rgba( 39,109,162,1); }
+.p4 { color: rgba( 56,128,184,1); }
 
 h3, .s10 { color: rgba(231,166, 28,1); }	/* Main Secondary color (1): YELLOW */
 .s11 { color: rgba(130, 91, 11,1); }
@@ -48,12 +56,12 @@ h3, .s10 { color: rgba(231,166, 28,1); }	/* Main Secondary color (1): YELLOW */
 
 h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 .s21 { color: rgba(130, 63, 11,1); }
-a:visited, .s22 { color: rgba(177, 92, 27,1); }
+.s22 { color: rgba(177, 92, 27,1); }
 .s23 { color: rgba(252,136, 47,1); }
-a, .s24 { color: rgba(255,147, 65,1); }
+.s24 { color: rgba(255,147, 65,1); }
 /* End color scheme */
 /*  */
 
 body{
-  background-color: #2F2F2F;
+  background-color: #2F2F35;
 }
