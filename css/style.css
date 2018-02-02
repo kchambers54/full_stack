@@ -5,35 +5,45 @@ Bucknell University
 Main stylesheet for portfolio website
 */
 
+html{
+  font-size: 100%;
+}
+
+body{
+  background-color: #2F2F35;
+}
+
 /* Fonts */
 p, .font1{
   font-family: 'Droid Sans', sans-serif;
-  font-size: 12pt;
+  font-size: 1em;
   color: #DFDFDF;
 }
 
 .caption, .font2{
   font-family: 'Roboto condensed', sans-serif;
+  color: #DFDFDF;
 }
 
 .font3{
   font-family: 'PT Sans', sans-serif;
+  color: #DFDFDF;
 }
 
-h3{
+h3, .heading3{
   font-family: 'Nunito', sans-serif;
-  font-size: 16pt;
+  font-size: 1.5em;
 }
 
-h2{
+h2, .heading2{
   font-family: 'Cairo', sans-serif;
-  font-size: 20pt;
+  font-size: 2em;
 }
 
-h1{
+h1, .heading1{
   font-family: 'Lobster', serif;
   text-align: center;
-  font-size: 36pt;
+  font-size: 3em;
 }
 /* End fonts */
 /*Links*/
@@ -62,10 +72,6 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 .s24 { color: rgba(255,147, 65,1); }
 /* End color scheme */
 /*  */
-
-body{
-  background-color: #2F2F35;
-}
 
 /*  */
 /* ID's */
