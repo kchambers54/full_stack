@@ -2,7 +2,7 @@
 Keller Chambers   (c) 2018
 Bucknell University
 
-Main stylesheet for portfolio website
+Main stylesheet for portfolio website (Web first design)
 */
 
 html{
@@ -71,7 +71,11 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 .s23 { color: rgba(252,136, 47,1); }
 .s24 { color: rgba(255,147, 65,1); }
 /* End color scheme */
-/*  */
+/* Classes */
+
+.cTitle{
+  text-align: center;
+}
 
 /*  */
 /* ID's */
