@@ -97,17 +97,8 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   width: 100%;
 }
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.box{
-  text-align: left;
-  flex-grow: 1;
-  flex-shrink: 0;
-  width: 100%;
-}
+
+
 /* End Classes */
 /* ID's */
 #me{
@@ -115,18 +106,17 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   max-height: 400px;
 }
 
-@media (min-width: 800px){
-  .container{
-    width: 80%;
-  }
-  .box{
-    width: 50%;
-  }
-}
+/* Begin Scaling */
 
 .row{
   display: flex;
   flex-wrap: wrap;
+}
+.infocolumn{
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  text-align: center;
 }
 .projcolumn{
   width: 100%;
@@ -139,6 +129,12 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   margin-right: auto;
 }
 
+@media screen and (min-width: 800px) {
+  .infocolumn{
+    width: 50%;
+    text-align: center;
+  }
+}
 @media screen and (min-width: 550px) and (max-width: 949px) {
   .container{
     width: 90%;
