@@ -104,6 +104,9 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 #me{
   max-width: 300px;
   max-height: 300px;
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 /* Begin Scaling */
@@ -129,7 +132,7 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   margin-right: auto;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .infocolumn{
     width: 50%;
     text-align: center;
