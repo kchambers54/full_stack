@@ -4,6 +4,9 @@ Bucknell University
 
 Main stylesheet for portfolio website (Web first design)
 */
+*{
+  box-sizing: border-box;
+}
 
 html{
   font-size: 100%;
@@ -105,4 +108,38 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 #left{
   text-align: left;
   flex-grow: 1;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.projcolumn{
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 550px) and (max-width: 949px) {
+  .container{
+    width: 90%;
+  }
+  .projcolumn{
+    width: 50%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 950px) {
+  .container{
+    width: 80%;
+  }
+  .projcolumn{
+    width: 33%;
+    text-align: center;
+  }
 }
