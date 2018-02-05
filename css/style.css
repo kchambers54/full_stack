@@ -78,36 +78,50 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 /* End color scheme */
 /* Classes */
 
-.cTitle{
+.center{
   text-align: center;
 }
-.topSection{
+.section{
   background-color: rgba( 12, 52, 83,1); /* p1 */
   border: 3px solid;
   padding: 5px;
   border-color: rgba(231,116, 28,1); /* s20 */
 }
-.topBlock{
-
-}
 .noMargin{
   margin: 0px;
 }
 
-/*  */
-/* ID's */
+.feature img{
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+}
 
-#info{
+.container{
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
-#right{
-  text-align: right;
-  flex-grow: 1;
-}
-#left{
+.box{
   text-align: left;
   flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+}
+/* End Classes */
+/* ID's */
+#me{
+  max-width: 400px;
+  max-height: 400px;
+}
+
+@media (min-width: 800px){
+  .container{
+    width: 80%;
+  }
+  .box{
+    width: 50%;
+  }
 }
 
 .row{
