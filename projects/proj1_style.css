@@ -154,18 +154,18 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 }
 
 /* Scaling picture and info section */
-@media screen and (min-width: 575px) /*and (max-width: 991px)*/{
+@media screen and (min-width: 470px) /*and (max-width: 921px)*/{
   .infocolumn{
-    width: 50%;
+    width: 45%;
   }
 }
 /* Scaling Projects Section */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 767px) and (max-width: 921px) {
   .container{
     width: 90%;
   }
   .project{
-    width: 47%;
+    width: 45%;
   }
   .project h3{
     text-align: center;
@@ -177,12 +177,12 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   body{background-color: rgba( 23, 75,114,1);}
 }
 /* Full Size */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 921px) {
   .container{
     width: 80%;
   }
   .project{
-    width: 30%;
+    width: 28%;
   }
   .project h3{
     text-align: center;
