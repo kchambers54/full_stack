@@ -4,15 +4,9 @@ Bucknell University
 
 Main stylesheet for portfolio website (Web first design)
 */
-html{
-  font-size: 100%;
-  height: 100%;;
-}
 
 body{
   background-color: #2F2F35;
-  min-height: 100%;
-  margin: 0;
 }
 article, section{
   padding-left: 5px;
@@ -82,37 +76,25 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 /* End color scheme */
 /* Classes */
 
-.center{
-  text-align: center;
-}
-.section{
+.orangeBorder{
   border: 3px solid;
-  padding: 5px;
   margin: 5px;
   border-color: rgba(231,116, 28,1); /* s20 */
 }
 .project{
   background-color: rgba( 12, 52, 83,1); /* p1 */
   border: 3px solid;
-  padding: 5px;
   border-color: rgba(231,116, 28,1); /* s20 */
   margin: 5px;
-  width: 100%;
-  flex-grow: 1;
-  flex-shrink: 0;
 }
 .clickable:hover{
   background-color: rgba( 26, 96,149,1);
 }
-
 .noMargin{
   margin: 0px;
 }
 .noBotMargin{
   margin-bottom: 0px;
-}
-.noUnderline{
-  text-decoration: none;
 }
 .blueBack{
   background-color: rgba( 12, 52, 83,1); /* p1 */
@@ -121,59 +103,23 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 /* End Classes */
 /* ID's */
 #me{
-  max-width: 200px;
-  max-height: 200px;
-  width: 100%;
-  height: 100%;
-  flex-grow: 1;
-  flex-shrink: 1;
+  max-width: 250px;
+  max-height: 250px;
 }
 
 /* Begin Scaling */
 .container{
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #2F2F35;
 }
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
-.infocolumn{
-  width: 100%;
-  flex-grow: 1;
-  flex-shrink: 0;
-  text-align: center;
-}
-.namecolumn{
-  width: 100%;
-  flex-grow: 1;
-  flex-shrink: 0;
-  text-align: center;
-}
 
-/* Scaling picture and info section */
-@media screen and (min-width: 575px) /*and (max-width: 991px)*/{
-  .infocolumn{
-    width: 50%;
-  }
-}
 /* Scaling Projects Section */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .container{
     width: 90%;
   }
-  .project{
-    width: 47%;
-  }
   .project h3{
     text-align: center;
   }
-  p{font-size: 1.33em;}
-  h3{font-size: 2em;}
-  h2{font-size: 2.66em;}
-  h1{font-size: 3em;}
   body{background-color: rgba( 23, 75,114,1);}
 }
 /* Full Size */
@@ -181,20 +127,8 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   .container{
     width: 80%;
   }
-  .project{
-    width: 30%;
-  }
   .project h3{
     text-align: center;
   }
-  p{font-size: 1.33em;}
-  h3{font-size: 2em;}
-  h2{font-size: 2.66em;}
-  h1{font-size: 4em;}
   body{background-color: rgba( 23, 75,114,1);}
-
-  /* For center photo */
-  /*.namecolumn{
-    width: 50%;
-  }*/
 }
