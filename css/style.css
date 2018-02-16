@@ -7,6 +7,7 @@ Main stylesheet for portfolio website (Web first design)
 
 body{
   background-color: #2F2F35;
+  padding-top: 6rem;
 }
 article, section{
   padding-left: 5px;
@@ -85,7 +86,11 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   background-color: rgba( 12, 52, 83,1); /* p1 */
   border: 3px solid;
   border-color: rgba(231,116, 28,1); /* s20 */
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+.project > a:hover{
+  text-decoration: none;
 }
 .clickable:hover{
   background-color: rgba( 26, 96,149,1);
@@ -99,17 +104,20 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 .blueBack{
   background-color: rgba( 12, 52, 83,1); /* p1 */
 }
+.container{
+  background-color: #2F2F35;
+}
+
+.navbar{
+  color: rgba( 26, 96,149,1);
+  background-color: rgba( 12, 52, 83,1);
+}
 
 /* End Classes */
 /* ID's */
 #me{
   max-width: 250px;
   max-height: 250px;
-}
-
-/* Begin Scaling */
-.container{
-  background-color: #2F2F35;
 }
 
 /* Scaling Projects Section */
@@ -120,7 +128,13 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   .project h3{
     text-align: center;
   }
-  body{background-color: rgba( 23, 75,114,1);}
+  .project{
+    margin: 0px;
+  }
+  body{
+    background-color: rgba( 23, 75,114,1);
+    padding-top: 3.5rem;
+  }
 }
 /* Full Size */
 @media screen and (min-width: 992px) {
@@ -130,5 +144,11 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
   .project h3{
     text-align: center;
   }
-  body{background-color: rgba( 23, 75,114,1);}
+  .project{
+    margin: 0px;
+  }
+  body{
+    background-color: rgba( 23, 75,114,1);
+    padding-top: 3.5rem;
+  }
 }

@@ -1,0 +1,35 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  background-color: rgba( 12, 52, 83,1);
+  color: rgba(231,116, 28,1);
+}
+.btn-secondary,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: rgba(231,166, 28,1);
+  border: .05rem solid rgba(130, 91, 11,1);
+}
+.btn-secondary:hover{
+  border: .05rem solid rgba(130, 63, 11,1);
+  background-color: rgba(231,116, 28,1);
+}
+.btn-secondary.disabled{
+ background-color: rgba(255,194, 65,1);
+ color: #333;
+}
+
+.btn-primary{
+  background-color: rgba( 26, 96,149,1);
+}
+
+.navbar{
+  color: rgba( 26, 96,149,1);
+  background-color: rgba( 12, 52, 83,1);
+}
+
+.jumbotron{
+  color: #333;
+  background-color: #ddd;
+}
