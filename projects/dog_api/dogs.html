@@ -6,7 +6,6 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<base href="../" target="_blank">
 	<title>
       Dogs
     </title>
@@ -44,13 +43,27 @@
 
   	<div class="container">
 
-		<h1> Dogs </h1>
+      <h1> What Dog Breed Are You? </h1>
 
-		
+      <div>
+
+        <p>Enter your first OR last name here:</p>
+
+        <form name="name_form" action="">
+          Name:<br>
+          <input type="text" name="enter_name" id="enter_name" /><br><br>
+        </form>
+
+        <button type="submit" form="name_form" value="Submit" id="button">Show Me!</button>
+        
+        <br><br>
+        <div id="breed_return"></div>
+
+      </div>
 
   	</div>
 
-    <script src="dogs.js"></script>
+  <script src="dogs.js"></script>
 
 </body>
 
