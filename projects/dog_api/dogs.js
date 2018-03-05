@@ -168,8 +168,19 @@ var get_breed = function get_dog() {
       }
     }
 
-    document.getElementById("breed_return").innerHTML = dog_breeds[best_i];
-
+    //Print breed name
+    document.getElementById("breed_return").innerHTML = 'You\'re a ' + dog_breeds[best_i];
+    
+    //Show breed image.
+    fetch('https://dog.ceo/api/breed/' + dog_breeds[best_i] + '/images/random')
+      .then(function(response) {
+        return response.json();
+    })
+      .then(function(myJson) {
+        dog_img = myJson.message;     
+        document.getElementById("breed_image").innerHTML = '<img src=' + dog_img + '></img>';
+    });
+    
   }
   else {
     document.getElementById("breed_return").innerHTML = "ENTER A BREED";
@@ -186,8 +197,5 @@ fetch('https://dog.ceo/api/breeds/list/all')
     })
     .then(function(myJson) {
         dog_breeds = Object.keys(myJson.message);
-        console.log(myJson);
-        console.log(Object.keys(myJson.message));
         button.addEventListener("click", get_breed);
-        //document.getElementById("enter_name").addEventListener("keypress", get_breed);
     });
