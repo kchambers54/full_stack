@@ -111,6 +111,9 @@ h1, .s20 { color: rgba(231,116, 28,1); }	/* Main Secondary color (2): ORANGE */
 .navbar{
   color: rgba( 26, 96,149,1);
   background-color: rgba( 12, 52, 83,1);
+  border-bottom: 2px;
+  border-color: white;
+
 }
 
 /* End Classes */
