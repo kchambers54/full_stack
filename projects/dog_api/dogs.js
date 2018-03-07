@@ -183,7 +183,7 @@ var get_breed = function get_dog() {
     
   }
   else {
-    document.getElementById("breed_return").innerHTML = "ENTER A BREED";
+    document.getElementById("breed_return").innerHTML = "ENTER A NAME";
   }
 }
 
@@ -192,10 +192,8 @@ var dog_breeds;
 var name;
 
 fetch('https://dog.ceo/api/breeds/list/all')
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(myJson) {
+    .then(response => response.json())
+    .then(myJson => {
         dog_breeds = Object.keys(myJson.message);
         button.addEventListener("click", get_breed);
     });
