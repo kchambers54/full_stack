@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 //import logo from './logo.svg';
 import './App.css';
 
-import CourseReturn from './Components/CourseReturn'
+import ReviewerBlock from './Components/ReviewerBlock'
+import CourseSearcher from './Components/CourseSearcher'
 
 import { Container } from 'reactstrap'
 
@@ -23,7 +24,7 @@ class App extends Component {
 
       <Container fluid={true}>
         
-        <CourseReturn department='CSCI'/>
+        <CourseSearcher/>
       
       </Container>
     );
