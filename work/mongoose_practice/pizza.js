@@ -87,10 +87,10 @@ app.put('/:orderName', (req, res) => {
   var order = Order( {name: req.params.orderName, toppings: ['cheese']} )
   order.save()
 
-   orders[req.params.orderName] = {
-     number: orderId,
-     toppings: ['Cheese'] // default topping
-   }
+  //  orders[req.params.orderName] = {
+  //    number: orderId,
+  //    toppings: ['Cheese'] // default topping
+  //  }
    // End ToDo
 
   res.json({   // echo the order back (which now has an order number)
@@ -130,7 +130,8 @@ app.post('/:orderName', (req, res) => {
   // don't forget to save it back to the database!
   req.pizzaOrder.toppings.push(...req.body)
 
-  // TODO, how do you SAVE the modified pizzaOrder back to the database?
+  // TODO: DONE, how do you SAVE the modified pizzaOrder back to the database?
+  req.pizzaOrder.save()
 
   res.json({   // echo the order back (which now has an order number)
     result: 'success',
