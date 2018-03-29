@@ -8,10 +8,6 @@ class Course extends React.Component {
         
     }
 
-    componentWillReceiveProps(newProps) {
-
-    }
-
     render() {
         const course = this.props.course;
         

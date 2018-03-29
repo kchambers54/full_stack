@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import './App.css';
 
 import SearchText from './Components/SearchText'
+import TopBar from './Components/TopBar'
 
-import 'reactstrap'
+import { Container } from 'reactstrap'
 
 class App extends Component {
   // constructor(props) {
@@ -14,11 +15,13 @@ class App extends Component {
   
   render() {
     return (
-      
       <div>
+        <TopBar/>
+        <Container fluid={true}>
         
-        <SearchText/>
+          <SearchText/>
       
+        </Container>
       </div>
     );
   }
