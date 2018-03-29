@@ -2,7 +2,7 @@
   "name": "courses",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kchambers54.github.io/full_stack/projects/2/courses",
+  "homepage": "https://kchambers54.github.io/full_stack/projects/2/courses/build",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "fs": "0.0.1-security",
