@@ -1,11 +1,19 @@
 import React from 'react'
 
-import {Card, CardImg, CardBody, CardSubtitle, CardTitle, CardText, Button} from 'reactstrap'
+import ReviewsList from './ReviewsList'
+import {Card, CardBody, CardSubtitle, CardTitle, CardText, Button} from 'reactstrap'
 
 class Course extends React.Component {
     constructor(props) {
         super(props);
-        
+        this.onButtonClick = this.onButtonClick.bind(this);
+        this.state = {
+            
+        }
+    }
+
+    onButtonClick(){
+        this.props.onButtonClick(this.props.course);
     }
 
     render() {
@@ -20,9 +28,10 @@ class Course extends React.Component {
                         <CardSubtitle>
                             {course.Department + ' ' + course.CrseNum}
                         </CardSubtitle>
-                        <CardText>{'Section: ' + course.Section}</CardText>
+                        <CardText>Reviews:</CardText>
+                        <ReviewsList course={course}/>
                     </CardBody>
-                    <Button>Reviews</Button>
+                    <Button onClick={this.onButtonClick}>Reviews</Button>
                 </Card>
 
             </div>
