@@ -68,9 +68,9 @@ class CoursesList extends React.Component{
                         courses.courseObjects[currCourseTitle] = [];
                         courses.courseObjects[currCourseTitle].push(this.props.courseInfo[i]);
                     }
-                    else {
-                        courses.courseObjects[currCourseTitle].push(this.props.courseInfo[i]);
-                    }
+                    // else {
+                    //     courses.courseObjects[currCourseTitle].push(this.props.courseInfo[i]);
+                    // }
                     // console.log(courses.courseObjects[currCourseTitle][0]);
                     // console.log('X');
                     // console.log(courses.courseObjects);
