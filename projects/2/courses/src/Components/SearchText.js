@@ -3,6 +3,8 @@ import {Form, Label, Input, Button} from 'reactstrap';
 import SearchMethod from './SearchMethod'
 import CoursesList from './CoursesList'
 
+import '../css/SearchText.css'
+
 class SearchText extends SearchMethod {
     // props are essentially the arguments passed in when 
     // CourseReturn is called.
@@ -14,7 +16,8 @@ class SearchText extends SearchMethod {
         this.state = {
             searchText: '',
             courseInfo: null,
-            prevSearch: ''
+            prevSearch: '',
+            buttonColor: 'secondary'
         }
     };
 
@@ -39,24 +42,27 @@ class SearchText extends SearchMethod {
     }
     
     loadCoursesBySearch(searchText) {
-        let text = "";
-        //Convert all spaces and quotes to http format.
-        text += encodeURI(searchText);
-        console.log('Encoded URL: ' + text);
-
         const query = `text=${searchText}`;
         this.searchCourses(query)
             .then((data) => {
                 if (data.message.length > 0) {
                     this.setState({ courseInfo: data.message });
                 } else {
-                    console.log('courseInfo = None');
+                    // console.log('courseInfo = None');
                     this.setState({ courseInfo: "none" });
                 }
             });
     }
     
     render() {
+        let buttonColor = '';
+        if (this.state.searchText !== '') {
+            buttonColor = 'primary';
+        }
+        else {
+            buttonColor = 'secondary';
+        }
+
         return (
           <div className="p-4">
             <Form className="base_lookup-form" onSubmit={this.onTextSubmit}>
@@ -67,7 +73,7 @@ class SearchText extends SearchMethod {
                 value={this.state.searchText}>
                 {/*Leave Text Box Empty*/}
               </Input>
-              <Button
+              <Button className="mt-3 mb-3" color={buttonColor}
                 onClick={this.onTextSubmit}>
                 Search
               </Button>

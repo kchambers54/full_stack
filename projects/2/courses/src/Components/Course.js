@@ -7,31 +7,32 @@ class Course extends React.Component {
     constructor(props) {
         super(props);
         this.onButtonClick = this.onButtonClick.bind(this);
-        this.state = {
-            
-        }
     }
 
     onButtonClick(){
-        this.props.onButtonClick(this.props.course);
+        this.props.onButtonClick(this.props.sections[0]);
     }
 
     render() {
-        const course = this.props.course;
-        
+        const sections = this.props.sections;
+        const mainSection = sections[0];
+        const courseTitle = this.props.courseTitle;
+        // console.log('From card: ' + courseTitle);
+        // console.log(JSON.stringify(sections[0], null, 4));
+
         return (
             <div>
                 
-                <Card>
+                <Card className='mt-2 mb-2'>
                     <CardBody>
-                        <CardTitle>{course.Title}</CardTitle>
+                        <CardTitle>{courseTitle}</CardTitle>
                         <CardSubtitle>
-                            {course.Department + ' ' + course.CrseNum}
+                            {mainSection.Department + ' ' + mainSection.CrseNum}
                         </CardSubtitle>
                         <CardText>Reviews:</CardText>
-                        <ReviewsList course={course}/>
+                        <ReviewsList course={mainSection}/>
                     </CardBody>
-                    <Button onClick={this.onButtonClick}>Reviews</Button>
+                    <Button color='primary' onClick={this.onButtonClick}>Write a Review</Button>
                 </Card>
 
             </div>
