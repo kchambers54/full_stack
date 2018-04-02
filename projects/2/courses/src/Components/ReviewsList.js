@@ -29,6 +29,7 @@ class ReviewsList extends React.Component {
         if (this.props.course !== null) {
             if (this.props.course !== this.state.prevState) {
                 this.setState({prevState: this.props.course});
+                console.log('fetching');
                 this.fetchReviewsCall(this.props.course._id);
             }
         }
@@ -83,6 +84,8 @@ class ReviewsList extends React.Component {
         // if (this.state.reviews) {
         //     reviewsContent = this.state.reviews;
         // }
+
+        this.fetchReviews();
 
 
         return(
