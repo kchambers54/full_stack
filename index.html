@@ -1,152 +1,61 @@
 <!doctype html>
 
-<!--
-Keller Chambers  (c) 2018
-Bucknell University
-
-Homepage for portfolio website
--->
-
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>
-      Web Portfolio
-    </title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+    <title>Example 1</title>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Droid+Sans|Roboto+Condensed|PT+Sans|Nunito|Lobster|Cairo">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/index.css" rel="stylesheet">
   </head>
 
-  <body>
+  <div class="fullscreen-bg">
+    <video autoplay muted loop id="myVideo">
+      <source src="img/mainVid.mp4" type="video/mp4">
+    </video>
+  </div>
 
-    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar fixed-top">
-      <a class="navbar-brand" href="#">Keller Chambers</a>
-      <div class="navbar-nav-scroll">
-        <ul class="navbar-nav bd-navbar-nav flex-row">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="projects/1a/project1.html">Project1a</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projects/1b/project1b.html">Project1b</a>
-          </li> -->
-        </ul>
-      </div>
-    </header>
+  <body class="text-center">
 
-    <div class="container">
-
-      <h1>
-        Web Portfolio
-      </h1>
-
-      <div class="orangeBorder row blueBack">
-        <div class="col-sm-12 col-md-6">
-          <img src="img/me.png" alt="Picture of me" id="me" class="mx-auto d-block">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div>
+          <!-- <h3 class="masthead-brand">Keller Chambers</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="../../index.html">Projects</a>
+            <a class="nav-link" href="#">Contact</a>
+          </nav> -->
         </div>
-        <div class="col-sm-12 col-md-6 text-center" class="align:middle">
-            <h3 class="noMargin">Keller Chambers</h3>
-            <p class="">email: khc009@bucknell.edu</p>
-            <p class="noMargin">Full Stack Web Applications</p>
-            <p class="noMargin">CSCI379 - Alan Marchiori</p>
-            <p class="noMargin">Bucknell University - 2018</p>
-        </div>
+      </header>
 
-      </div>
 
-      <article class="orangeBorder">
-          <h2>Sample Coursework</h2>
-          <p>
-            Welcome to my web portfolio!  This is where I keep
-            and showcase work from CSCI379: Full Stack Web Applications.
-            You can see some of my projects below.
+      <main role="main">
+        <h1 class="cover-heading">Keller Chambers</h1>
+        <p class="lead">Welcome to my Portfolio.  </p>
+        <p class="lead">
+          <p>Here, you can see examples of
+              work I've completed.
           </p>
-          <p>
-            Take a look at my Bootstrap sample pages:
-             <a href="projects/1b/example1.html">Example Page 1</a>
-            and <a href="projects/1b/example2.html">Example Page 2</a>.
-          </p>
-          <p>
-            <a href="projects/dog_api/dogs.html">Click here to find out what Dog Breed you are!</a>
-          </p>
-      </article>
-
-      <section>
-        <h2>Projects</h2>
-
-        <div class="row">
-
-            <article class="clickable col-12 col-md-6 col-lg-4 project">
-              <a href="projects/1a/project1.html">
-                <h3 class="noMargin">
-                  Project 1
-                </h3>
-                <p>
-                    Project 1a consisted of building the home page
-                    you see here! The focus was on responsive design,
-                    ensuring that pages scale nicely with the screen
-                    they are being viewed on. Click here to see it!
-                </p>
-              </a>
-            </article>
-
-
-          <article class="clickable col-12 col-md-6 col-lg-4 project">
-            <a href="projects/2/courses/build/index.html">
-              <h3 class="noMargin">
-                Project 2
-              </h3>
-              <p class="center">
-                React-based course review system. Users can search, 
-                view, rate, and review courses as listed in a 3rd 
-                party API. (API no longer accessable)
-              </p>
-            </a>
-          </article>
-
-          <article class="clickable col-12 col-md-12 col-lg-4 project">
-            <a href="https://makerportal.bucknell.edu">
-              <h3 class="noMargin">
-                Project 3
-              </h3>
-              <p class="center">
-                A web portal for Bucknell's makerspace badging box system, 
-                developed in React in conjuction with a Node/Express API and 
-                SQL database. (Authorized Bucknell login required for access)
-              </p>
-            </a>
-          </article>
-        </div>
-
-      </section>
-      <br>
-      <footer class="text-center">
-        <p>Keller Chambers - 2018</p>
-        <p>Contact information: <a href="mailto:khc009@bucknell.edu">
-          khc009@bucknell.edu</a>.
+          <a href="home.html" class="btn btn-lg btn-secondary">Enter</a>
         </p>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div>
+          <p>Keller Chambers - 2018</p>
+        </div>
       </footer>
     </div>
 
-    <!-- JS Imports -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core JavaScript -->
+
 
   </body>
-
 </html>
